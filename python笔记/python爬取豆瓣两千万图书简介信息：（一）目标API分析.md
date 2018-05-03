@@ -19,7 +19,7 @@
 [python爬取豆瓣两千万图书简介信息：（八）总结](https://www.jianshu.com/p/012b157ff8f5)
 
 
-###目标API分析
+### 目标API分析
 
 前一阵一直在看python，偶尔也写一写demo，但一直想写一个大一些的练手项目，偶尔看到豆瓣提供了一个图书简介信息的API：https://api.douban.com/v2/book/1220562
 最后一位即 图书的id
