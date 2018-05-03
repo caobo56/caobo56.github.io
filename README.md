@@ -18,7 +18,7 @@
     
     - python笔记：
 
-        [codewars（python）练习笔记一：查找二进制中“1”的个数](https://github.com/caobo56/caobo56.github.io/blob/master/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9A%E6%9F%A5%E6%89%BE%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD%E2%80%9C1%E2%80%9D%E7%9A%84%E4%B8%AA%E6%95%B0.md)
+        [Python 线程与进程](https://github.com/caobo56/caobo56.github.io/blob/master/python%E7%AC%94%E8%AE%B0/Python%20%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B.md)
         
     - TensorFlow学习笔记:
     
