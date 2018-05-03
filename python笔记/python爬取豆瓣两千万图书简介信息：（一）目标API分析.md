@@ -2,21 +2,21 @@
 
 这是全部的调试过程，我已经整理成为笔记，这里分享给大家：
 
-[python爬取豆瓣两千万图书简介信息：（一）目标API分析](https://www.jianshu.com/p/a1331537544e)
+- [python爬取豆瓣两千万图书简介信息：（一）目标API分析](https://www.jianshu.com/p/a1331537544e)
 
-[python爬取豆瓣两千万图书简介信息：（二）简单python请求urllib2](https://www.jianshu.com/p/d378598fc66e)
+- [python爬取豆瓣两千万图书简介信息：（二）简单python请求urllib2](https://www.jianshu.com/p/d378598fc66e)
 
-[python爬取豆瓣两千万图书简介信息：（三）异常处理](https://www.jianshu.com/p/807f4ca8b1ab)
+- [python爬取豆瓣两千万图书简介信息：（三）异常处理](https://www.jianshu.com/p/807f4ca8b1ab)
 
-[python爬取豆瓣两千万图书简介信息：（四）多进程并发](https://www.jianshu.com/p/40c3faadd4db)
+- [python爬取豆瓣两千万图书简介信息：（四）多进程并发](https://www.jianshu.com/p/40c3faadd4db)
 
-[python爬取豆瓣两千万图书简介信息：（五）数据库设计](https://www.jianshu.com/p/5258c286f56d)
+- [python爬取豆瓣两千万图书简介信息：（五）数据库设计](https://www.jianshu.com/p/5258c286f56d)
 
-[python爬取豆瓣两千万图书简介信息：（六）数据库操作类](https://www.jianshu.com/p/916166d20105)
+- [python爬取豆瓣两千万图书简介信息：（六）数据库操作类](https://www.jianshu.com/p/916166d20105)
 
-[python爬取豆瓣两千万图书简介信息：（七）代理IP](https://www.jianshu.com/p/1236d69337dc)
+- [python爬取豆瓣两千万图书简介信息：（七）代理IP](https://www.jianshu.com/p/1236d69337dc)
 
-[python爬取豆瓣两千万图书简介信息：（八）总结](https://www.jianshu.com/p/012b157ff8f5)
+- [python爬取豆瓣两千万图书简介信息：（八）总结](https://www.jianshu.com/p/012b157ff8f5)
 
 
 ### 目标API分析
