@@ -8,7 +8,8 @@ Python由于有全锁局的存在（同一时间只能有一个线程执行）�
 但在网络请求密集中，协程比多线程强上很多。
 在CPU密集中，还是进程应用更多。
 以下是三个例子：
-* 线程：
+### 线程：
+
 ```
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
@@ -37,6 +38,7 @@ for i in range(5):
 ```
 
 运行发现，不带线程处理的程序和线程处理的程序运行顺序是一样的：
+
 ```
 /Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /Users/caobo/PycharmProjects/ThreadTest/threadTest.py
 
@@ -58,9 +60,11 @@ for i in range(5):
 
 Process finished with exit code 0
 ```
+
 每个线程执行完需要3秒，依次执行线程，总耗时15秒。
 
-* 进程
+### 进程
+
 ```
 # 进程处理
 if __name__ == "__main__":
@@ -69,7 +73,9 @@ if __name__ == "__main__":
         p = multiprocessing.Process(target=print_time, args=(threadName,))
         p.start()
 ```
+
 进程处理运行结果如下：
+
 ```
 /Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /Users/caobo/PycharmProjects/ThreadTest/threadTest.py
 2017-11-08 11:58:44.045175 threadName0
@@ -90,9 +96,11 @@ if __name__ == "__main__":
 
 Process finished with exit code 0
 ```
+
 每个进程执行完需要3秒，并发执行线程，总耗时3秒。
 
-#进程池
+### 进程池
+
 ```
 # 进程池处理
 if __name__ == "__main__":
@@ -104,7 +112,9 @@ if __name__ == "__main__":
     pool.join()
     print("Sub-process(es) done.")
 ```
+
 进程池处理结果如下：
+
 ```
 /Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /Users/caobo/PycharmProjects/ThreadTest/threadTest.py
 2017-11-08 12:01:03.557402 threadName0
@@ -126,9 +136,11 @@ Sub-process(es) done.
 
 Process finished with exit code 0
 ```
+
 由于设置了进程并发的数量为4，所以，前三秒执行的都是前四个进程的内容（每个进程执行完需要三秒），进程5只能在前四个进程执行完成之后，才开始执行。总耗时6秒。
 
 修改进程并发数量为5：
+
 ```
 # 进程池处理
 if __name__ == "__main__":
@@ -140,7 +152,9 @@ if __name__ == "__main__":
     pool.join()
     print("Sub-process(es) done.")
 ```
+
 运行结果如下：
+
 ```
 /Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6 /Users/caobo/PycharmProjects/ThreadTest/threadTest.py
 2017-11-08 12:12:17.210982 threadName0
@@ -162,6 +176,7 @@ Sub-process(es) done.
 
 Process finished with exit code 0
 ```
+
 修改设置进程并发的数量为5，所以，所有5个进程能够同步执行。每个进程执行完需要三秒，总耗时3秒。
 
 
