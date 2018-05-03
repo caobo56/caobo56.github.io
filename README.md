@@ -18,7 +18,7 @@
     
     - python笔记：
 
-        [Python 线程与进程](https://github.com/caobo56/caobo56.github.io/blob/master/python%E7%AC%94%E8%AE%B0/Python%20%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B.md)
+        [Python 线程与进程](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/Python%20%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B.md)
         
     - TensorFlow学习笔记:
     
