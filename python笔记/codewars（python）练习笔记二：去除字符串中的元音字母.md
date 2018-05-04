@@ -1,5 +1,7 @@
-###codewars（python）练习笔记二：去除字符串中的元音字母
-####题目：
+### codewars（python）练习笔记二：去除字符串中的元音字母
+
+### 题目：
+
 Trolls are attacking your comment section!
 
 A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
@@ -15,16 +17,18 @@ Note: for this kata y isn't considered a vowel.
 例如，字符串“This website for for losers LOL！”会变成“Ths wbst s fr lsrs LL!”。
 注意：对于这个 y不被视为元音。
 
-####我的解法：
+### 我的解法：
+
 ```
 def disemvowel(string):
     string = string.replace('a','').replace('e','').replace('i','').replace('o','').replace('u','')
     string = string.replace('A','').replace('E','').replace('I','').replace('O','').replace('U','')
     return string
 ```
+
 哈哈哈，我承认我是个逗比了，主要是昨天的题给我的印象比较深，第一反应就是这样，哎。
 
-####常规解法：
+### 常规解法：
 ```
 def disemvowel(string):
     out=[]
@@ -36,19 +40,23 @@ def disemvowel(string):
 ```
 我仔细想了想，无论怎么写，时间复杂度都是m*n， 因为至少你要判断string中的每一个字母是不是在元音字母中的，无非是写法上优雅不优雅。
 
-####牛逼解法：
+### 牛逼解法：
+
 ```
 def disemvowel(string):
    return string.translate(None, "aeiouAEIOU")
 ```
 
-####关于translate()函数
+### 关于translate()函数
+
 [translate(table, deletechars="")](http://www.runoob.com/python3/python3-string-translate.html)
 str.translate(table, deletechars="")
+
 根据 str 给出的表(包含 256 个字符)转换 string 的字符, 要过滤掉的字符放到 deletechars 参数中 |
 
 
 以下实例展示了 translate()函数的使用方法：
+
 ```
 #!/usr/bin/python
 
@@ -65,7 +73,9 @@ test = "this is string example....wow!!!";
 print test.translate(trantab);
 print test.translate(trantab,deltab); # Python2中，删除指定字符在 translate() 方法中
 ```
+
 以上实例输出结果如下：
+
 ```
 th3s 3s str3ng 2x1mpl2....w4w!!!
 3s 3s sr3ng 2x1mpl2....4!!!
@@ -73,13 +83,13 @@ th3s 3s str3ng 2x1mpl2....w4w!!!
 
 translate()是个翻译函数，是将制定的字母表intab[]翻译为对应的映射表outtab[],并删除deltab[]。是python 的字符串内建函数。
 
-## python的字符串内建函数
+### python的字符串内建函数
 
 字符串方法是从python1.6到2.0慢慢加进来的——它们也被加到了Jython中。
 
 这些方法实现了string模块的大部分方法，如下表所示列出了目前字符串内建支持的方法，所有的方法都包含了对Unicode的支持，有一些甚至是专门用于Unicode的。
 
-####下面就是从菜鸟笔记中摘过来的python 的字符串内建函数表。
+### 下面就是从菜鸟笔记中摘过来的python 的字符串内建函数表。
 
 | 方法 | 描述 |
 | ------------- |:-------------:|
