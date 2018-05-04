@@ -1,5 +1,7 @@
-###codewars（python）练习笔记一：查找二进制中“1”的个数
-####题目：
+### codewars（python）练习笔记一：查找二进制中“1”的个数
+
+#### 题目：
+
 Write a function that takes an (unsigned) integer as input, and returns the number of bits that are equal to one in the binary representation of that number.
 
 Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
@@ -11,7 +13,8 @@ Example: The binary representation of 1234 is 10011010010, so the function shoul
 
 这也是一道比较经典的题目，貌似不少面试总结文章里有这样的题目。
 
-####普通方法：
+### 普通方法：
+
 ```
 #!/usr/bin/python
 
@@ -25,17 +28,20 @@ def countBits(n):
     
 print countBits(1234)
 ```
+
 在codewars上的测试结果：
 >Time: 550ms Passed: 5 Failed: 0
 
 这种方法是很常规的移位+计数。这种方法的运算次数与输入n最高位1的位置有关，最多循环32次。
 
-####结合python系统函数的解法：
+### 结合python系统函数的解法：
+
 ```
 def countBits(n):
     return len(bin(n).replace("0b","").replace("0",""))
     #一句话的事儿
 ```
+
 在codewars上的测试结果：
 >Time: 574ms Passed: 5 Failed: 0
 
@@ -45,7 +51,8 @@ replace("0","")是将 二进制中的0去掉，这样就得到了生下的都是
 len() 再获取其长度，就是该数字二进制表示中等于1的位数
 虽然这是四个系统函数的拼接使用，但有效的减少了相应的代码行数。
 
-####下面是个从codewars找到的更短的：
+### 下面是个从codewars找到的更短的：
+
 ```
 def countBits(n):
     return bin(n).count("1")
