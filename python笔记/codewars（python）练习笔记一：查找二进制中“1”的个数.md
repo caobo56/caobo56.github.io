@@ -1,6 +1,6 @@
 ### codewars（python）练习笔记一：查找二进制中“1”的个数
 
-#### 题目：
+### 题目：
 
 Write a function that takes an (unsigned) integer as input, and returns the number of bits that are equal to one in the binary representation of that number.
 
