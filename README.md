@@ -28,7 +28,7 @@
         
         [codewars（python）练习笔记四：判断单词中是否有重复字母.md](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9B%9B%EF%BC%9A%E5%88%A4%E6%96%AD%E5%8D%95%E8%AF%8D%E4%B8%AD%E6%98%AF%E5%90%A6%E6%9C%89%E9%87%8D%E5%A4%8D%E5%AD%97%E6%AF%8D.md)
         
-        [codewars（python）练习笔记五：创建数字的根函数.md](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%9B%9B%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%95%B0%E5%AD%97%E7%9A%84%E6%A0%B9%E5%87%BD%E6%95%B0.md)
+        [codewars（python）练习笔记五：创建数字的根函数.md](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%94%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%95%B0%E5%AD%97%E7%9A%84%E6%A0%B9%E5%87%BD%E6%95%B0.md)
         
         [python爬取豆瓣两千万图书简介信息：（一）目标API分析](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/python%E7%88%AC%E5%8F%96%E8%B1%86%E7%93%A3%E4%B8%A4%E5%8D%83%E4%B8%87%E5%9B%BE%E4%B9%A6%E7%AE%80%E4%BB%8B%E4%BF%A1%E6%81%AF%EF%BC%9A%EF%BC%88%E4%B8%80%EF%BC%89%E7%9B%AE%E6%A0%87API%E5%88%86%E6%9E%90.md)
         
