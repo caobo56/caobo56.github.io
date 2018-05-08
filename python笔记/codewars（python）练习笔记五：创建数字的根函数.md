@@ -52,6 +52,22 @@ def digital_root(n):
 
 由于这道题跟之前的[获取多位数字的乘法持久性](https://www.jianshu.com/p/27503826d1b3)比较类似，所以类似的衍生算法有以下几个：
 
+1）使用while 循环代替递归循环
+
+```
+#!/usr/bin/python
+
+def digital_root(n):
+    while n > 9:
+        n_str = str(n)
+        n = 0
+        for i in n_str:
+            n = n + int(i) 
+    return n
+```
+
+2）使用reduce()函数
+
 ```
 #!/usr/bin/python
 from functools import reduce
@@ -62,7 +78,7 @@ def digital_root(n):
     return n
 ```
 
-或者使用operator.add：
+3）使用operator.add
 
 ```
 #!/usr/bin/python
