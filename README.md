@@ -27,8 +27,6 @@
         [codewars（python）练习笔记五：创建数字的根函数.md](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%94%EF%BC%9A%E5%88%9B%E5%BB%BA%E6%95%B0%E5%AD%97%E7%9A%84%E6%A0%B9%E5%87%BD%E6%95%B0.md)
         
         [codewars（python）练习笔记六：找出数组中奇偶性特殊的数的位置.md](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%85%AD%EF%BC%9A%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E4%B8%AD%E5%A5%87%E5%81%B6%E6%80%A7%E7%89%B9%E6%AE%8A%E7%9A%84%E6%95%B0%E7%9A%84%E4%BD%8D%E7%BD%AE.md)
-        
-        [codewars（python）练习笔记七：电话号码格式化.md](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%83%EF%BC%9A%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96.md)
 
 		  [codewars（python）练习笔记七：电话号码格式化.md](https://caobo56.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%83%EF%BC%9A%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96.md)
 
