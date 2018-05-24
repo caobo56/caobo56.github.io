@@ -54,6 +54,6 @@
 
         [codewars（python）练习笔记十九：求数组的和因素.md](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%8D%81%E4%B9%9D%EF%BC%9A%E6%B1%82%E6%95%B0%E7%BB%84%E7%9A%84%E5%92%8C%E5%9B%A0%E7%B4%A0.md)
 
-
+	[codewars（python）练习笔记二十：ROT13解密.md](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python笔记/codewars（python）练习笔记二十：ROT13解密.md)
 
 
