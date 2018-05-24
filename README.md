@@ -56,4 +56,5 @@
 
 	[codewars（python）练习笔记二十：ROT13解密.md](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python笔记/codewars（python）练习笔记二十：ROT13解密.md)
 
+[codewars（python）练习笔记二十一：Matrix Determinant](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C%E5%8D%81%E4%B8%80%EF%BC%9AMatrix%20Determinant.md)
 
