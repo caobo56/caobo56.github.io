@@ -59,16 +59,13 @@ det(a_minor)是指通过划掉元素a所在的行和列而创建的2x2矩阵的�
 ### 我的解法：
 ```
 #!/usr/bin/python
-    
+
 def determinant(matrix):
     if len(matrix) < 2:
         return matrix[0][0]
-    elif len(matrix) == 2:
-        return matrix[0][0]*matrix[1][1] - matrix[0][1]*matrix[1][0]
-    while len(matrix) > 2:
-        return sum([(1 if y%2 == 0 else -1)*(matrix[0][y])*determinant([[matrix[i][j] for j in range(0,len(matrix[i])) if j != y] for i in range(1,len(matrix))]) for y in range(0,len(matrix[0]))])
-             
-print determinant([ [2,5,3], [1,-2,-1], [1, 3, 4]])
+    while len(matrix) >= 2:
+        return sum([((y%2)*2-1)*(matrix[0][y])*determinant([[matrix[i][j] for j in range(0,len(matrix[i])) if j != y] for i in range(1,len(matrix))]) for y in range(0,len(matrix[0]))])
+
 ```
 
 ### 我的思路：
@@ -232,6 +229,16 @@ def determinant(matrix):
         return sum([(1 if y%2 == 0 else -1)*(matrix[0][y])*determinant([[matrix[i][j] for j in range(0,len(matrix[i])) if j != y] for i in range(1,len(matrix))]) for y in range(0,len(matrix[0]))])
             
 print determinant([ [2,5,3], [1,-2,-1], [1, 3, 4]])
+```
+#### 8.(1 if y%2 == 0 else -1) => (y%2)*2-1
+```
+#!/usr/bin/python
+
+def determinant(matrix):
+    if len(matrix) < 2:
+        return matrix[0][0]
+    while len(matrix) >= 2:
+        return sum([((y%2)*2-1)*(matrix[0][y])*determinant([[matrix[i][j] for j in range(0,len(matrix[i])) if j != y] for i in range(1,len(matrix))]) for y in range(0,len(matrix[0]))])
 ```
 
 这个是我最为满意的一次编写算法过程。
