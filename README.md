@@ -14,7 +14,7 @@
     
 ## 练习笔记
 
-- 题目目录
+
         
         [codewars（python）练习笔记一：查找二进制中“1”的个数.md](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80%EF%BC%9A%E6%9F%A5%E6%89%BE%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD%E2%80%9C1%E2%80%9D%E7%9A%84%E4%B8%AA%E6%95%B0.md)
         
@@ -59,3 +59,5 @@
         [codewars（python）练习笔记二十一：Matrix Determinant.md](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C%E5%8D%81%E4%B8%80%EF%BC%9AMatrix%20Determinant.md)
 	
 	[codewars（python）练习笔记二十二：Pick peaks(求峰值)](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C%E5%8D%81%E4%BA%8C%EF%BC%9APick%20peaks(%E6%B1%82%E5%B3%B0%E5%80%BC).md)
+
+
