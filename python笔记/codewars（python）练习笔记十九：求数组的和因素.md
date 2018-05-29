@@ -1,19 +1,25 @@
 # codewars（python）练习笔记十九：求数组的质因数的倍数和集
 ### 题目
 Given an array of positive or negative integers 
+
 ```
 I= [i1,..,in]
 ```
+
 you have to produce a sorted array P of the form 
+
 ```
 [ [p, sum of all ij of I for which p is a prime factor (p positive) of ij] ...]
 ```
+
 P will be sorted by increasing order of the prime numbers. The final result has to be given as a string in Java, C#, C, C++ and as an array of arrays in other languages.
 
 Example:
+
 ```
 I = [12, 15] # result = [[2, 12], [3, 27], [5, 15]]
 ```
+
 [2, 3, 5] is the list of all prime factors of the elements of I, hence the result.
 
 **Notes:**
@@ -22,6 +28,7 @@ Example: I = [15, 30, -45] 5 divides 15, 30 and (-45) so 5 appears in the result
 	•	In Fortran - as in any other language - the returned string is not permitted to contain any redundant trailing whitespace: you can use dynamically allocated character strings.
 
 Sample Tests:
+
 ```
 a = [12, 15]
 test.assert_equals(sum_for_list(a), [[2, 12], [3, 27], [5, 15]])
@@ -85,6 +92,7 @@ def sum_for_list(lst):
 ```
 
 然后想了想，是不是能简化一下提升一下效率，就考虑到是不是利用数据结构，简化一下加和那一步的效率。
+
 ```
 #!/usr/bin/python
 import math
@@ -113,7 +121,9 @@ def sum_for_list(lst):
         res.append([key,vsum])
     return res
 ```
+
 利用数组嵌套，不如直接利用dict，所以继续优化如下：
+
 ```
 #!/usr/bin/python
 import math
@@ -142,7 +152,9 @@ def sum_for_list(lst):
         res.append([key,vsum])
     return res
 ```
+
 继续优化：
+
 ```
 #!/usr/bin/python
 import math
@@ -168,6 +180,7 @@ def sum_for_list(lst):
 ```
 
 然后再在上面的嵌套想办法，首先是if else。abs(num)可以直接取num的绝对值。三目运算也可以减少代码行数：
+
 ```
 #!/usr/bin/python
 import math
@@ -187,7 +200,9 @@ def sum_for_list(lst):
     res = [[key,sum(kvdict[key])] for key in sorted(kvdict.keys())]
     return res
 ```
+
 将判断质数的方法优化：
+
 ```
 #!/usr/bin/python
 import math
@@ -204,8 +219,10 @@ def sum_for_list(lst):
     res = [[key,sum(kvdict[key])] for key in sorted(kvdict.keys())]
     return res
 ```
+
 ### 另一种思路：
 先求出需要求的数组的最大值以内的质数的集。然后再找出对应的质数的集合。这个思路是以空间换取部分时间，在给定数组的最大值较小的时候，比较合适。但，如果给定数组的最大值比较大，那么要生成的质数集就会非常大，生成效率也会大幅降低。
+
 ```
 #!/usr/bin/python
 import math
@@ -230,6 +247,7 @@ def sum_for_list(lst):
 ### 牛逼人是怎么写的
 
 我想了好久，都没有特别好优化算法，然后提交之后，一个牛逼的算法轰然而至：
+
 ```
 def sum_for_list(lst):
     factors = {i for k in lst for i in xrange(2, abs(k)+1) if not k % i}
@@ -237,6 +255,7 @@ def sum_for_list(lst):
     return [[p, sum(e for e in lst if not e % p)] for p in sorted(prime_factors)]
 
 ```
+
 这个是就对python语法的仔细掌握了，但从效率上和时间复杂度上来讲，也就这样了。
 
 ### 总结：

@@ -18,6 +18,7 @@ EDIT: A lot of people have been confused in the comments. To try to prevent any 
 * The diagram on the wiki page I linked to at the bottom of the description may be useful.
 
 So, for example:
+
 ```
 queue_time([5,3,4], 1)
 # should return 12
@@ -31,25 +32,28 @@ queue_time([10,2,3,3], 2)
 queue_time([2,3,10], 2)
 # should return 12
 ```
+
 N.B. You should assume that all the test input will be valid, as specified above.
 
 P.S. The situation in this kata can be likened to the more-computer-science-related idea of a thread pool, with relation to running multiple processes at the same time: https://en.wikipedia.org/wiki/Thread_pool
 
 Test case:
-queue_time([2,3,10], 2)  should be 12
-queue_time([], 5)  should be 0
-queue_time([2], 5)  should be 2
-queue_time([1,2,3,4,5], 100) should be 5
-queue_time([2,3,10,2,3], 2) should be 12
+
+    queue_time([2,3,10], 2)  should be 12
+    queue_time([], 5)  should be 0
+    queue_time([2], 5)  should be 2
+    queue_time([1,2,3,4,5], 100) should be 5
+    queue_time([2,3,10,2,3], 2) should be 12
 
 ### 题目大意:
 这道题是经典的超市购物排队问题：有一个队列 customers[]，队列中每个元素是当前顾客的处理时长，有 n 个购物台,可以同时处理n个客户。这是题目大意，求的是队列的处理时长。
 特别注意：
-* 只有一个队列，
-* 队列处理顺序不能变，
-* 假设队列中的前面的人(即数组/列表中的第一个元素)在有购物台空闲的时候就会继续前进。
+1. 只有一个队列，
+2. 队列处理顺序不能变，
+3. 假设队列中的前面的人(即数组/列表中的第一个元素)在有购物台空闲的时候就会继续前进。
 
 ### 我的解法：
+
 ```
 #!/usr/bin/python
 
@@ -65,6 +69,7 @@ def queue_time(customers, n):
 ```
 
 ### 牛逼解法：
+
 ```
 #!/usr/bin/python
 
@@ -78,6 +83,7 @@ def queue_time(customers, n):
 我跟最牛逼的解法之间的差距在于：我意识到了    list_temp 通过 [customers[i] for i in range(0,n)]这样创建，绝对不是最佳解法。但没有想到，可以直接生成长度为n 的空数组。
 
 ### 另一个牛逼解法：
+
 ```
 def queue_time(customers, n):
     queues = [0] * n
@@ -86,6 +92,7 @@ def queue_time(customers, n):
         queues[0] += i
     return max(queues)
 ```
+
 相对于上一个，sort() 要比min()  算法复杂度高一些。
 
 ### 另一个牛逼解法：

@@ -8,6 +8,7 @@ Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
 If the input String is empty, return an empty String. The words in the input String will only contain valid consecutive numbers.
 
 For an input: "is2 Thi1s T4est 3a" the function should return "Thi1s is2 3a T4est"
+
 ```
 your_order("is2 Thi1s T4est 3a")
 [1] "Thi1s is2 3a T4est"
@@ -28,13 +29,14 @@ def order(sentence):
 ```
 
 我的思路：
-* 1）先将句子转换为数组
-* 2）提取出每个word的索引
-* 3）将索引排序
-* 4）根据排序后的索引，和索引原来的位置，依次获取索引对应的word，生成新的word 数组
-* 5）将新数组拼接成为 string 返回
+1. 先将句子转换为数组
+2. 提取出每个word的索引
+3. 将索引排序
+4. 根据排序后的索引，和索引原来的位置，依次获取索引对应的word，生成新的word 数组
+5. 将新数组拼接成为 string 返回
 
 因此第一遍的解法是：
+
 ```
 def order(sentence):
     org = sentence.split(' ')
@@ -80,6 +82,7 @@ def order(sentence):
 codewars 上永远有大神：
 
 解法一：
+
 ```
 def extract_number(word):
     for l in word: 
@@ -90,6 +93,7 @@ def order(sentence):
     return ' '.join(sorted(sentence.split(), key=extract_number))
 
 ```
+
 解法二：
 
 ```

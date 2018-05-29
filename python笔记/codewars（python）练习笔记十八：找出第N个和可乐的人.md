@@ -14,9 +14,11 @@ Sheldon, Leonard, Penny, Rajesh, Howard
 Input
 
 The input data consist of an array which contains at least 1 name, and single integer n.
+
 ```
 (1 ≤ n ≤ 1000000000).
 ```
+
 Output / Examples Return the single line — the name of the person who drinks the n-th can of cola. The cans are numbered starting from 1. Please note that you should spell the names like this: "Sheldon", "Leonard", "Penny", "Rajesh", "Howard" (without the quotes). In that order precisely the friends are in the queue initially. 
 
 ```
@@ -43,6 +45,7 @@ def whoIsNext(names, r):
 ```
 
 ### 解法优化：
+
 ```
 def whoIsNext(names, r):
     i = 0
@@ -53,7 +56,9 @@ def whoIsNext(names, r):
     return names[(r-s-1)//(2**(i))]
 
 ```
+
 ### 另一种优化：
+
 ```
 import math
 
@@ -64,6 +69,7 @@ def whoIsNext(names, r):
 ```
 
 没看懂：
+
 ```
 def whoIsNext(names, r):
     i = 0
@@ -84,6 +90,7 @@ def whoIsNext(names, r, n = 1):
 ```
 
 下面是一个神一样的解法：
+
 ```
 def whoIsNext(names, r):
     while r > len(names):

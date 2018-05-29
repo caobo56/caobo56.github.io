@@ -16,6 +16,7 @@
 * 输入4，因为 4 已经是一个个位数了，所以直接返回0.
 
 ### 我的解法：
+
 ```
 #!/usr/bin/python
 
@@ -39,6 +40,7 @@ def persistence(n):
     else:
         return case_total_num
 ```
+
 其实这个就是一个常规的递归算法，有递归意识，这个算法就能自然而然的写出来。函数需要递归的次数，就设定一个 case_total_num ，存储递归的次数。
 
 ### 两个坑
@@ -60,6 +62,7 @@ def persistence(n):
 ### 一点疑问的测试结论：
 
 但后来在，我写了这么一个demo 来测试具体时间时，缺没有提现出足够的差别：
+
 ```
 begin = datetime.datetime.now()
 for i in range(1000,9999999):
@@ -68,6 +71,7 @@ end = datetime.datetime.now()
 k = end - begin
 print k 
 ```
+
 执行结果：
 
 ![图片.png](https://upload-images.jianshu.io/upload_images/1136127-12598a33f0078227.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -77,6 +81,7 @@ print k
 ### 优化解法一：
 去掉 global case_total_num
 因为，既然可以return persistence(temp) ，那在return 的时候，让persistence(temp)直接加1，就是的引用次数
+
 ```
 #!/usr/bin/python
 
@@ -95,7 +100,9 @@ def persistence(n):
     else:
         return case_total_num
 ```
+
 ### 优化解法二：
+
 ```
 def persistence(n):
     if str(n) == 1:
@@ -110,7 +117,9 @@ def persistence(n):
     return count
 ```
 这种方法，利用while循环来替换掉递归循环，降低了算法的复杂度，也是一种很不错的算法。
+
 ### 优化解法三：
+
 ```
 def persistence(n):
     ni = 0
@@ -119,6 +128,7 @@ def persistence(n):
         ni += 1
     return ni
 ```
+
 Python reduce() 函数
 reduce() 函数会对参数序列中元素进行累积。
 
@@ -135,18 +145,20 @@ reduce() 函数语法：
     initializer -- 可选，初始参数
 
 以下实例展示了 reduce() 的使用方法：
+
 ```
->>>def add(x, y) :            # 两数相加
-...     return x + y
-... 
->>> reduce(add, [1,2,3,4,5])   # 计算列表和：1+2+3+4+5
+def add(x, y) :            # 两数相加
+     return x + y
+
+reduce(add, [1,2,3,4,5])   # 计算列表和：1+2+3+4+5
 15
->>> reduce(lambda x, y: x+y, [1,2,3,4,5])  # 使用 lambda 匿名函数
+reduce(lambda x, y: x+y, [1,2,3,4,5])  # 使用 lambda 匿名函数
 15
 
 ```
 
 ### 优化解法四：
+
 ```
 import operator
 def persistence(n):
@@ -156,9 +168,12 @@ def persistence(n):
         i+=1
     return i
 ```
+
 这个是在reduce()函数的基础上，引用operator模块的mul(x,y)
 
 [operator模块介绍](http://www.cnblogs.com/nju2014/p/5568139.html)
 http://www.cnblogs.com/nju2014/p/5568139.html
 
 codewars上大神多啊！！
+
+

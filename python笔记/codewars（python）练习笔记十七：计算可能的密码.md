@@ -70,6 +70,7 @@ def get_pins(observed):
 这个解法，是常规的解法。构造temp_map，特定的需求直接构造相应的temp_map,以每个输入项为key，后面跟的是他对应的可能值。
 
 ### 照例，后面是牛逼的解法：
+
 ```
 #!/usr/bin/python
 
@@ -82,6 +83,7 @@ def get_pins(observed):
 ```
 
 另一个牛逼的解法：
+
 ```
 def get_pins(observed):
   map = [['8','0'], ['1','2','4'], ['1','2','3','5'], ['2','3','6'], ['1','4','5','7'], ['2','4','5','6','8'],
@@ -89,7 +91,9 @@ def get_pins(observed):
   return map[int(observed[0])] if len(observed) == 1 else [x + y for x in map[int(observed[0])] for y in get_pins(observed[1:])]
 
 ```
+
 其实，大部分网友的思路都是相同的， 只是细节上的差异
+
 ```
 def get_pins(observed):
   map = [['8','0'], ['1','2','4'], ['1','2','3','5'], ['2','3','6'], ['1','4','5','7'], ['2','4','5','6','8'],

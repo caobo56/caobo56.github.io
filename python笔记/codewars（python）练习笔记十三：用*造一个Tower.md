@@ -44,12 +44,14 @@ def tower_builder(n_floors):
 马蛋，这是大学刚开始学C的时候的题目，现在看，仍然不过时。但是我仍然不太会写。试了试，好歹先把题目解出来。
 
 最牛逼的解法：
+
 ```
 def tower_builder(n):
     return [("*" * (i*2-1)).center(n*2-1) for i in range(1, n+1)]
 ```
 
 其他解法一：
+
 ```
 def tower_builder(n_floors):
     if n_floors <= 0:return []
@@ -63,6 +65,7 @@ def tower_builder(n_floors):
 ```
 
 其他解法二：
+
 ```
 def tower_builder(n_floors):
     tower = []
@@ -76,6 +79,7 @@ def tower_builder(n_floors):
 ```
 
 其他解法三：
+
 ```
 def tower_builder(n_floors):
     floors = []
@@ -84,7 +88,9 @@ def tower_builder(n_floors):
         floors.append(' ' * n_floors + '*' * (i * 2 + 1) + ' ' * n_floors)
     return floors
 ```
+
 其他解法四：
+
 ```
 def tower_builder(n_floors):
     return ['{0}{1}{0}'.format(' ' * (n_floors - 1 - x), '*' * (1 + 2 * x)) for x in range(n_floors)]

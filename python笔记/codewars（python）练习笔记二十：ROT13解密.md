@@ -6,10 +6,12 @@ I found this joke on USENET, but the punchline is scrambled. Maybe you can decip
 Hint: For this task you're only supposed to substitue characters. Not spaces, punctuation, numbers etc. 
 
 Test examples:
+
 ```
 rot13("EBG13 rknzcyr.") == "ROT13 example.";
 rot13("This is my first ROT13 excercise!" == "Guvf vf zl svefg EBG13 rkprepvfr!"
 ```
+
 ```
 test.expect(rot13("EBG13 rknzcyr.") == "ROT13 example.")
 ```
@@ -29,6 +31,7 @@ ROT13加密/解密过程。
 加密解密用的是一个过程：将 ABCDEFGHIJKLM 依次替换为 NOPQRSTUVWXYZ，并将NOPQRSTUVWXYZ 依次替换为 ABCDEFGHIJKLM。
 
 ### 我的解法：
+
 ```
 #!/usr/bin/python
 
@@ -47,6 +50,7 @@ print rot13('This is my first ROT13 excercise!')
 ```
 
 简化后：
+
 ```
 #!/usr/bin/python
 
@@ -65,6 +69,7 @@ print rot13('This is my first ROT13 excercise!')
 ```
 
 或者：
+
 ```
 #!/usr/bin/python
 
@@ -84,6 +89,7 @@ def rot13(message):
 
 ### 其他解法
 解法一：
+
 ```
 def rot13(message):
   return message.encode('rot13')
@@ -91,6 +97,7 @@ def rot13(message):
 ```
 
 解法二：
+
 ```
 import string
 
@@ -102,6 +109,7 @@ def rot13(message):
 ```
 
 解法三：
+
 ```
 def rot13(message):
     PAIRS = dict(zip("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
@@ -110,6 +118,7 @@ def rot13(message):
 
 ```
 解法四：
+
 ```
 def rot13(message):
     def decode(c):
@@ -123,6 +132,7 @@ def rot13(message):
     return "".join(decode(c) for c in message)
 ```
 解法五：
+
 ```
 def rot13(message):
     s = ''

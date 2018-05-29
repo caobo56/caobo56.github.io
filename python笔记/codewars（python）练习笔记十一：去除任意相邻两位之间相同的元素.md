@@ -12,6 +12,7 @@ unique_in_order([1,2,2,3,3])       == [1,2,3]
 实现函数unique_in_order，该函数将参数作为参数，并返回一个项目列表，其中任意相邻两位之间，没有包含相同值的元素，区分大小写，并保留元素的原始顺序。
 
 我的解法：
+
 ```
 def unique_in_order(iterable):
     list_temp = []
@@ -22,6 +23,7 @@ def unique_in_order(iterable):
 ```
 
 其他解法一：
+
 ```
 def unique_in_order(iterable):
     result = []
@@ -34,6 +36,7 @@ def unique_in_order(iterable):
 ```
 
 其他解法二：
+
 ```
 from itertools import groupby
 
@@ -42,11 +45,13 @@ def unique_in_order(iterable):
 ```
 
 其他解法三：
+
 ```
 unique_in_order = lambda l: [z for i, z in enumerate(l) if i == 0 or l[i - 1] != z]
 ```
 
 其他解法四：
+
 ```
 def unique_in_order(iterable):
   r = []
@@ -56,12 +61,14 @@ def unique_in_order(iterable):
 ```
 
  其他解法五：
+ 
 ```
 def unique_in_order(it):
     return [it[0]] + [e for i, e in enumerate(it[1:]) if it[i] != e] if it else []
 ```
 
 其他解法六：
+
 ```
 def unique_in_order(string):
     lst = [string[i] for i in range(0,len(string)) if (i==0 or string[i]!=string[i-1])];

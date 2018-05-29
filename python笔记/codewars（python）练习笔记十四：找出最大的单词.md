@@ -32,10 +32,13 @@ def high(x):
         list_p.append(p)
     return x.split(' ')[list_p.index(max(list_p))]
 ```
+
 牛逼的解法:
+
 ```
 def high(x):
     return max(x.split(), key=lambda k: sum(ord(c) - 96 for c in k))
 ```
+
 思路大同小异。
 
