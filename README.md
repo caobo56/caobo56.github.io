@@ -58,7 +58,7 @@
 
     [codewars（python）练习笔记二十一：Matrix Determinant.md](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C%E5%8D%81%E4%B8%80%EF%BC%9AMatrix%20Determinant.md)
 	
-    [codewars（python）练习笔记二十二：Pick peaks 求峰值.md](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C%E5%8D%81%E4%BA%8C%EF%BC%9APick peaks 求峰值.md)
+    [codewars（python）练习笔记二十二：Pick peaks 求峰值.md](https://caobo56.github.io/caobo56_codewars_python.github.io/#/python%E7%AC%94%E8%AE%B0/codewars%EF%BC%88python%EF%BC%89%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C%E5%8D%81%E4%BA%8C%EF%BC%9APick%20peaks%20%E6%B1%82%E5%B3%B0%E5%80%BC.md)
 
 
 
