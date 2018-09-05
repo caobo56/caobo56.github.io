@@ -301,11 +301,15 @@ def brainfuck_sum(l):
             res = '*p += ' + str(l['value']) + ';\n'
         elif l['value'] < 0:
             res = '*p -= ' + str(-l['value']) + ';\n'
+        else:
+            pass
     elif l['key'] == '<>':
         if l['value'] < 0:
             res = 'p -= ' + str(-l['value']) + ';\n'
         elif l['value'] > 0:
             res = 'p += ' + str(l['value']) + ';\n'
+        else:
+            pass
     else:
         pass
     return res
@@ -386,8 +390,8 @@ def brainfuck_to_c(source_code):
     "<[+-]>" -> "<[]>"
     "<[+-]>" -> ""
 
-    Which one is right?
-    (I guess the second is right, just want to be sure.)
+ Which one is right?
+ (I guess the second is right, just want to be sure.)
 
 
 
